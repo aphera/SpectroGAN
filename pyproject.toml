@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "acte"
+version = "0.1.0"
+description = "SpectroGAN aka transmogrifier"
+authors = ["George Woskob <georgewoskob@gmail.com>", "George Woskob <gwoskob@stanford.edu>"]
+
+[tool.poetry.scripts]
+visualize-training-example = "acte.transmogrifier.test_model:visualize_training_example"
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+colorama = "*"
+jsonpickle = "*"
+librosa = "*"
+matplotlib = "*"
+samplerate = "~0.1"
+structlog = "^21.2"
+tensorflow = "~2.4"
+boto3 = "^1.16.51"
+attr = "^0.3.1"
+simpleaudio = "^1.0.4"
+tqdm = "^4.60.0"
+tensorboard = "^2.7.0"
+pypianoroll = "^1.0.4"
+
+[tool.poetry.dev-dependencies]
+black = "19.10b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
